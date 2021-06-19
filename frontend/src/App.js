@@ -8,6 +8,7 @@ import ListingGrid from "./components/ListingGrid";
 const App = () => {
   return (
     <BrowserRouter>
+    <Wrapper>
       <GlobalStyles />
       <Header />
       <Switch>
@@ -15,8 +16,15 @@ const App = () => {
           <ListingGrid />
         </Route>
       </Switch>
+      </Wrapper>
     </BrowserRouter>
   );
 };
 
+const Wrapper = styled.div`
+display: flex;
+flex-direction:column;
+width: 100vw;
+height: 100vh;
+`
 export default App;
