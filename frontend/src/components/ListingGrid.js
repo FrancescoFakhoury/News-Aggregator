@@ -34,7 +34,7 @@ const ArticleWrapper = styled.div`
   display: grid;
   /* grid-template-columns: repeat(4, 500px);
   grid-template-rows: minmax(400px, auto) repeat(5, 400px); */
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   grid-gap: 10px;
   justify-content: center;
   justify-content: space-around;

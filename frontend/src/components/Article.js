@@ -35,7 +35,7 @@ const ImageWrapper = styled.div`
   border-radius: 50%;
 `;
 
-const Title = styled.div`
+const Title = styled.p`
   padding-top: 1rem;
   text-align: center;
   max-width: 20vw;
