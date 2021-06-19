@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Title>Hodl News</Title>
-      <BiRocket size="80px" color="red" />
+      <BiRocket size="80px" color="#cc3363" />
     </Wrapper>
   );
 };
