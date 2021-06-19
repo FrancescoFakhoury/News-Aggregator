@@ -1,14 +1,32 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import { BiRocket } from "react-icons/bi";
 
 const Header = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <Wrapper>
+      <Title>Hodl News</Title>
+      <BiRocket size="80px" color="red" />
+    </Wrapper>
+  );
+};
 
-export default Header
+const Wrapper = styled.div`
+  background: linear-gradient(90deg, var(--teagreen) 0%, var(--powderblue) 100%)
+    0% 0% no-repeat padding-box;
+  width: 100vw;
+  height: 17vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+`;
 
+const Title = styled.h1`
+  font-size: 80px;
+  margin: 0;
+  font-family: var(--header-font);
+  opacity: 0.8;
+  padding-left: 60px;
+`;
 
-
+export default Header;
