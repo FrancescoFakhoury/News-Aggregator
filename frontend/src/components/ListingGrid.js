@@ -39,7 +39,7 @@ const ArticleWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(600px, 600px));
   grid-gap: 30px;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 12rem;
   align-content: center;
 `
 
