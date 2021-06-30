@@ -8,7 +8,7 @@ const Article = ({ article }) => {
       <ImageWrapper>
         <Image src={article.urlToImage} />
       </ImageWrapper>
-      <Title numberOfLines={1}>
+      <Title href={article.url}>
         {article.title.length < 75
           ? `${article.title}`
           : `${article.title.substring(0, 75)}...`}
@@ -60,12 +60,18 @@ const ImageWrapper = styled.div`
   border-radius: 50%;
 `;
 
-const Title = styled.p`
+const Title = styled.a`
   padding-top: 1rem;
   text-align: left;
   max-width: 250px;
   font-size: 30px;
   font-family: "Padauk";
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default Article;

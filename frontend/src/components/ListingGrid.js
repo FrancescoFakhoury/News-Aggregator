@@ -10,7 +10,7 @@ const ListingGrid = () => {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/everything?q=cryptocurrency&from=2021-06-30&sortBy=publishedAt&apiKey=${API_KEY}`
+      `https://newsapi.org/v2/everything?q=cryptocurrency&from=${Date()}&sortBy=publishedAt&apiKey=${API_KEY}`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -23,11 +23,11 @@ const ListingGrid = () => {
 
   return (
     <MainWrapper>
-    <ArticleWrapper>
-      {news.map((article) => {
-        return <Article article={article}/>;
-      })}
-    </ArticleWrapper>
+      <ArticleWrapper>
+        {news.map((article) => {
+          return <Article article={article} />;
+        })}
+      </ArticleWrapper>
     </MainWrapper>
   );
 };
@@ -41,10 +41,8 @@ const ArticleWrapper = styled.div`
   justify-content: center;
   margin-top: 12rem;
   align-content: center;
-`
+`;
 
-const MainWrapper = styled.div`
-`
-
+const MainWrapper = styled.div``;
 
 export default ListingGrid;
