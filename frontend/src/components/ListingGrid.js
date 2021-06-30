@@ -25,7 +25,7 @@ const ListingGrid = () => {
     <MainWrapper>
     <ArticleWrapper>
       {news.map((article) => {
-        return <Article article={article} />;
+        return <Article article={article}/>;
       })}
     </ArticleWrapper>
     </MainWrapper>

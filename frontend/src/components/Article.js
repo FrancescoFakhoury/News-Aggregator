@@ -27,12 +27,14 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const Time = styled.p``;
+const Time = styled.p`
+max-width: 200px;
+`;
 
 const Author = styled.p`
  font-family: "Padauk";
  font-size: 20px;
- padding-left: 10px;
+ max-width: 200px;
 `;
 
 const Image = styled.img`
@@ -52,10 +54,11 @@ const ImageWrapper = styled.div`
 
 const Title = styled.p`
   padding-top: 1rem;
-  text-align: center;
+  text-align: left;
   max-width: 200px;
   font-size: 26px;
   font-family: "Padauk";
+
 `;
 
 export default Article;
