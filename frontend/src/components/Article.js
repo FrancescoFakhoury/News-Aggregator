@@ -8,9 +8,9 @@ const Article = ({ article }) => {
         <Image src={article.urlToImage} />
       </ImageWrapper>
       <Title numberOfLines={1}>
-      {article.title.length < 75
-                ? `${article.title}`
-                : `${article.title.substring(0, 75)}...`}
+        {article.title.length < 75
+          ? `${article.title}`
+          : `${article.title.substring(0, 75)}...`}
       </Title>
       <Author>{article.author}</Author>
       <Time>{article.publishedAt}</Time>
@@ -23,12 +23,16 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   grid-template-rows: repeat(auto-fill, minmax(250px, 250px));
   border-radius: 10%;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
 `;
-
 const Time = styled.p``;
 
-const Author = styled.p``;
+const Author = styled.p`
+ font-family: "Padauk";
+ font-size: 20px;
+ padding-left: 10px;
+`;
 
 const Image = styled.img`
   min-height: 15rem;
@@ -48,8 +52,9 @@ const ImageWrapper = styled.div`
 const Title = styled.p`
   padding-top: 1rem;
   text-align: center;
-  max-width: 150px;
-  font-size: 25px;
+  max-width: 200px;
+  font-size: 26px;
+  font-family: "Padauk";
 `;
 
 export default Article;
