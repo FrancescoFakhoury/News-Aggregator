@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   position: fixed;
   display: flex;
   align-items: center;
+  z-index: 10;
 `;
 
 const Title = styled.h1`

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {format} from "date-fns";
+import { format } from "date-fns";
 
 const Article = ({ article }) => {
   return (
@@ -14,7 +14,7 @@ const Article = ({ article }) => {
           : `${article.title.substring(0, 75)}...`}
       </Title>
       <Author>{article.author}</Author>
-      <Time>{format(new Date(article.publishedAt), 'PPPPpppp')}</Time>
+      <Time>{format(new Date(article.publishedAt), "PPPPpppp")}</Time>
     </Wrapper>
   );
 };
@@ -23,18 +23,26 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   grid-template-rows: repeat(auto-fill, minmax(250px, 250px));
-  border-radius: 10%;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    border: solid 1px grey;
+    box-shadow: 10px 10px 10px 0 var(--powderblue);
+    margin: -1px;
+    background: white;
+  }
 `;
 const Time = styled.p`
-max-width: 200px;
+  max-width: 200px;
+  font-size: 17px;
 `;
 
 const Author = styled.p`
- font-family: "Padauk";
- font-size: 20px;
- max-width: 200px;
+  font-family: "Padauk";
+  font-size: 20px;
+  max-width: 200px;
+  font-weight: bold;
 `;
 
 const Image = styled.img`
@@ -55,10 +63,9 @@ const ImageWrapper = styled.div`
 const Title = styled.p`
   padding-top: 1rem;
   text-align: left;
-  max-width: 200px;
-  font-size: 26px;
+  max-width: 250px;
+  font-size: 30px;
   font-family: "Padauk";
-
 `;
 
 export default Article;
