@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {format} from "date-fns";
 
 const Article = ({ article }) => {
   return (
@@ -13,7 +14,7 @@ const Article = ({ article }) => {
           : `${article.title.substring(0, 75)}...`}
       </Title>
       <Author>{article.author}</Author>
-      <Time>{article.publishedAt}</Time>
+      <Time>{format(new Date(article.publishedAt), 'PPPPpppp')}</Time>
     </Wrapper>
   );
 };
