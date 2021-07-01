@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import GlobalStyles from "./components/GlobalStyles";
 import ListingGrid from "./components/ListingGrid";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <ListingGrid />
         </Route>
       </Switch>
+      <Footer />
       </Wrapper>
     </BrowserRouter>
   );

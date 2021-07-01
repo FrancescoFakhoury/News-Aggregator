@@ -13,7 +13,7 @@ const Article = ({ article }) => {
           ? `${article.title}`
           : `${article.title.substring(0, 75)}...`}
       </Title>
-      <Author>{article.author}</Author>
+      <Source>{article.source.name}</Source>
       <Time>{format(new Date(article.publishedAt), "PPPPpppp")}</Time>
     </Wrapper>
   );
@@ -25,20 +25,23 @@ const Wrapper = styled.div`
   grid-template-rows: repeat(auto-fill, minmax(250px, 250px));
   justify-content: center;
   align-items: center;
+  border-bottom: solid 2px #000;
 
   &:hover {
-    border: solid 1px grey;
-    box-shadow: 10px 10px 10px 0 var(--powderblue);
-    margin: -1px;
+    border: solid 3px #000;
+    box-shadow: 6px 6px 0px 0px #000;
+    margin: -3px;
     background: white;
   }
 `;
+
 const Time = styled.p`
   max-width: 200px;
   font-size: 17px;
+  font-family: "padauk";
 `;
 
-const Author = styled.p`
+const Source = styled.p`
   font-family: "Padauk";
   font-size: 20px;
   max-width: 200px;
@@ -68,6 +71,7 @@ const Title = styled.a`
   font-family: "Padauk";
   text-decoration: none;
   color: #000;
+  font-weight: bold;
 
   &:hover {
     text-decoration: underline;
