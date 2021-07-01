@@ -66,6 +66,7 @@ const Title = styled.a`
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  line-height: 40px;
 
   &:hover {
     text-decoration: underline;
