@@ -5,9 +5,7 @@ import { format } from "date-fns";
 const Article = ({ article }) => {
   return (
     <Wrapper>
-      <ImageWrapper>
-        <Image src={article.urlToImage} />
-      </ImageWrapper>
+      <Image src={article.urlToImage} />
       <Title href={article.url}>
         {article.title.length < 75
           ? `${article.title}`
@@ -49,13 +47,8 @@ const Source = styled.p`
 `;
 
 const Image = styled.img`
-  min-height: 15rem;
-  min-width: 15rem;
-`;
-
-const ImageWrapper = styled.div`
-  max-height: 15rem;
-  max-width: 15rem;
+  height: 15rem;
+  width: 15rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
