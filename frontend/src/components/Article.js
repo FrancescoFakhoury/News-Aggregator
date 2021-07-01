@@ -44,6 +44,7 @@ const Source = styled.p`
   font-size: 20px;
   max-width: 200px;
   font-weight: bold;
+  padding-left: 20px;
 `;
 
 const Image = styled.img`
