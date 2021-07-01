@@ -41,7 +41,7 @@ const Time = styled.p`
 
 const Source = styled.p`
   font-family: "Padauk";
-  font-size: 20px;
+  font-size: 21px;
   max-width: 200px;
   font-weight: bold;
   padding-left: 20px;
@@ -66,8 +66,7 @@ const Title = styled.a`
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  line-height: 40px;
-
+  line-height: 38px;
   &:hover {
     text-decoration: underline;
   }
