@@ -13,6 +13,7 @@ const FooterWrapper = styled.div`
 height: 5rem;
 display: flex;
 align-items: center;
+
 `
 
 const Text = styled.p`
