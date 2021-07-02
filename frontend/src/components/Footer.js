@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
     return (
         <FooterWrapper>
-            <Text>Powered by <span>News</span> <span>Api</span> </Text>
+            <Text>Powered by <span>news</span><span>Api</span> </Text>
         </FooterWrapper>
     )
 }
